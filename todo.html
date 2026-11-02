@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="todo.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>To-Do List</h1>
+        <p>Add tasks, mark them as completed, or delete them.</p>
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="fortune.html">Task 1</a>
+            <a href="stopwatch.html">Task 2</a>
+            <a href="todo.html" aria-current="page">Task 3</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-content todo" aria-label="Your tasks">
+            <form id="task-form">
+                <label for="task-input">New task</label>
+                <div class="task-entry">
+                    <input type="text" id="task-input" placeholder="Enter a task" required>
+                    <button type="submit">Add task</button>
+                </div>
+            </form>
+
+            <p class="todo-help">Your tasks and completion status are saved in this browser.</p>
+            <p id="storage-message" role="alert" hidden></p>
+            <h2>My tasks</h2>
+            <p id="empty-message">No tasks yet. Add a task above.</p>
+            <ul id="task-list" aria-label="Task list"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>CSE 391 &mdash; Assignment 2, Question 3</p>
+    </footer>
+</body>
+</html>

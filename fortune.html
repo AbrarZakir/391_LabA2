@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortune Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Fortune Generator</h1>
+        <p>Refresh the page for a random fortune. Choose a color to change its style.</p>
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="fortune.html" aria-current="page">Task 1</a>
+            <a href="stopwatch.html">Task 2</a>
+            <a href="todo.html">Task 3</a>
+        </nav>
+    </header>
+
+    <main class="fortune-main">
+        <section class="fortune-section" aria-label="Your fortune">
+            <div id="fortune-box">
+                <p id="fortune-text"></p>
+            </div>
+
+            <div class="color-buttons" role="group" aria-label="Fortune styles">
+                <button type="button" class="green" data-theme="green" aria-label="Green style" aria-pressed="false" title="Green style"></button>
+                <button type="button" class="yellow" data-theme="yellow" aria-label="Yellow style" aria-pressed="false" title="Yellow style"></button>
+                <button type="button" class="blue" data-theme="blue" aria-label="Blue style" aria-pressed="false" title="Blue style"></button>
+                <button type="button" class="orange" data-theme="orange" aria-label="Orange style" aria-pressed="false" title="Orange style"></button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>CSE 391 &mdash; Assignment 2, Question 1</p>
+    </footer>
+</body>
+</html>

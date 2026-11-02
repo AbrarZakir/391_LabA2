@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="stopwatch.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Stopwatch</h1>
+        <p>Counts in steps of 3 seconds and automatically stops at 30.</p>
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="fortune.html">Task 1</a>
+            <a href="stopwatch.html" aria-current="page">Task 2</a>
+            <a href="todo.html">Task 3</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-content stopwatch" aria-label="Stopwatch controls">
+            <output id="timer-display" aria-live="polite" aria-atomic="true">0 seconds</output>
+            <p id="timer-status" role="status">Ready</p>
+            <div class="timer-buttons">
+                <button type="button" id="start-button">Start</button>
+                <button type="button" id="stop-button" disabled>Stop</button>
+                <button type="button" id="reset-button">Reset</button>
+            </div>
+            <p class="timer-help">Stop pauses the timer. Start resumes from the last displayed time.<br>Reset returns it to 0.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>CSE 391 &mdash; Assignment 2, Question 2</p>
+    </footer>
+</body>
+</html>
